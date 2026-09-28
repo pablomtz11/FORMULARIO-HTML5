@@ -1,0 +1,70 @@
+* { 
+    box-sizing: border-box; /*Selecciona todos los elemntos de la página y hace que los bordes y el espacio interno no hagan crecer el tamaño de las cajas */
+}
+
+body { /*Aplica estilos a todo el cuerpo de la página  */
+    font-family: Arial, sans-serif; /*Cambia la letra de la página a Arial */
+    background-color: #f2f2f2;  /*Pone un color gris dde fondo */
+    margin: 0; /* Quita los márgenes*/
+    padding: 0;/*Quita el relleno interno */
+}
+
+.contenedor { 
+    width: 450px;/*Define que el ancho fijo */
+    margin: 50px auto;/* Centra el contenedor y le da 50 píxeles de espacio arriba y abajo.*/
+    background-color: white;/*Pone el fondo en color blanco */
+    padding: 30px;/* Le da 30 píxeles de espacio interno hacia adentro*/
+    border-radius: 10px;/* Redondea las esquinas*/
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);/* Agrega una sombra suave hacia abajo para darle efecto de flotación.*/
+}
+
+h1 { 
+    text-align: center;/* Centra el texto del título.*/
+    margin-bottom: 10px; /*Le da un espacio de 10 píxeles hacia abajo */
+}
+
+p { 
+    text-align: center;/* Centra el texto del párrafo*/
+    color: #666;/* texto en gris oscuro*/
+}
+
+.formulario { 
+    display: flex;/* diseño flexible*/
+    flex-direction: column;/* Acomoda los elementos uno debajo de otro en columna*/
+}
+
+label { 
+    margin-top: 15px;/*Margen superior de 15 pixeles */
+    margin-bottom: 5px;/*Margen inferior de 15 pixeles */
+    font-weight: bold;/*texto en negritas */
+}
+
+input { 
+    padding: 10px;/*espacio interno de 10 pixeles */
+    border: 1px solid #ccc;/*Dibuja un borde delgado y gris claro alrededor */
+    border-radius: 5px;/*Redondea un poco las esquinas del cuadro */
+    font-size: 16px;/*tamaño de la letra dentro del cuadro */
+}
+
+button { 
+    margin-top: 25px;/*Margen superior de 25 pixeles */
+    padding: 12px;/* espacio interno de 12 pixeles*/
+    background-color: #007bff;/*Color de fondo azul */
+    color: white;/*texto del botón en color blanco*/
+    border: none;/* Quita el borde*/
+    border-radius: 5px;/* Redondea las esquinas del botón.*/
+    font-size: 16px;/* tamaño de la letra del botón*/
+    cursor: pointer;/*Hace que el puntero cambie a una manita cuando pasas el ratón por encima. */
+}
+
+button:hover { /*Estilos que se aplican solo cuando el usuario pasa el ratón sobre un botón. */
+    background-color: #0056b3;/* Cambia el azul del botón a un tono más oscuro al pasar el ratón.*/
+}
+
+.resultado { 
+    margin-top: 25px;/*Margen superior de 25 pixeles */
+    padding: 15px;/*espacio interno para que el texto no toque los bordes */
+    text-align: center;/*Centra el texto */
+    border-radius: 5px;/*Redondea las esquinas de la caja de resultado */
+    font-size: 18px;/* Hace la letra un poco más grande para que destaque la respuesta*/
+}

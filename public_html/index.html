@@ -1,0 +1,68 @@
+<!DOCTYPE html>  <!-- Se declara el tipo de documento para indicar la versión -->
+<html lang="es"> <!-- Indica que la página está en español -->
+
+<head> <!-- Inicio de encabezado -->
+    <meta charset="UTF-8"> <!-- Sirve para que se puedan leer bien los acentos, las eñes y los símbolos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página se acomode bien en celulares, tablets o computadoras -->
+
+    <title>Sistema de Calificaciones</title> <!-- Título de la página -->
+
+    <link rel="stylesheet" href="estilo.css"> <!-- Conecta el archivo con el CSS -->
+</head> <!-- Fin del encabezado -->
+
+<body> <!-- Inicio del cuerpo de la página -->
+
+    <div class="contenedor"> <!-- Es como una caja que junta todo el contenido para tenerlo ordenado -->
+
+        <h1>Sistema de Calificaciones</h1> <!-- Título de la página -->
+
+        <p>Captura las calificaciones del alumno</p> <!-- Párrafo que indica lo que se tiene que hacer -->
+
+        <div class="formulario"> <!-- Otra caja para agrupar los cuadros donde la gente escribe y los botones -->
+
+            <label for="nombre">Nombre del alumno:</label> <!-- Subtítulo que indica que se debe de poner el nombre -->
+            <input type="text" id="nombre" placeholder="Escribe el nombre"> <!-- Escribir un texto con una "pista" transparente -->
+
+            <label for="edad">Edad:</label> <!-- Texto para pedir la edad -->
+            <input type="number" id="edad" min="0"> <!-- Un cuadro para meter números donde el mínimo es cero -->
+
+            <label for="calificacion1">Calificación 1:</label> <!-- Texto para pedir la primera calificación -->
+            <input type="number" id="calificacion1" min="0" max="10"> <!-- Cuadro para la calificación 1 que admite de 0 a 10 -->
+
+            <label for="calificacion2">Calificación 2:</label> <!-- Texto para pedir la segunda calificación -->
+            <input type="number" id="calificacion2" min="0" max="10"> <!-- Cuadro para la calificación 2 que admite de 0 a 10 -->
+
+            <label for="calificacion3">Calificación 3:</label> <!-- Texto para pedir la tercera calificación -->
+            <input type="number" id="calificacion3" min="0" max="10"> <!-- Cuadro para la calificación 3 que admite de 0 a 10 -->
+
+            <label for="calificacion4">Calificación 4:</label> <!-- Texto para pedir la cuarta calificación -->
+            <input type="number" id="calificacion4" min="0" max="10"> <!-- Cuadro para la calificación 4 que admite de 0 a 10 -->
+
+            <!-- Botón que ejecutará la función de calcular cuando le des clic -->
+            <button onclick="calcularPromedio()">
+                Calcular promedio <!-- El texto que lleva escrito el botón -->
+            </button>
+
+            <!-- Botón que ejecutará la función agregar alumno -->
+            <button onclick="agregarAlumno()">
+                Agregar <!-- El texto que lleva escrito el botón -->
+            </button>
+
+            <!-- Botón que ejecutará la función limpiar formulario -->
+            <button onclick="limpiarFormulario()">
+                Limpiar <!-- El texto que lleva escrito el botón -->
+            </button>
+
+        </div>
+
+        <div id="resultado" class="resultado"> <!-- Caja vacía donde después aparecerá la respuesta o las calificaciones -->
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script> <!-- Conecta el archivo html con el de javascript -->
+
+</body>
+
+</html>
